@@ -63,7 +63,7 @@ const Todos: FC = () => {
                 value: filterStatus,
                 onChange: (e) => setFilterStatus(e.target.value),
               }}
-              options={statuses}
+              options={["Все", ...statuses]}
             />
             <UIButton
               variant="default"

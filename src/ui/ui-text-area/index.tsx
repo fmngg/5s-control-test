@@ -1,5 +1,5 @@
 import { FC, TextareaHTMLAttributes, PropsWithRef } from "react";
-import styles from "./UITextarea.module.scss";
+import styles from "./UITextArea.module.scss";
 import { RxExclamationTriangle } from "react-icons/rx";
 
 interface TextareaProps {

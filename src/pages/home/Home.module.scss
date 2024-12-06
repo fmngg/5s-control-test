@@ -1,0 +1,174 @@
+.homePage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+
+  .main {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 1px solid var(--gray);
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1000px;
+
+      .title {
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 25px;
+
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+
+      .list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          font-size: 18px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .image {
+      min-width: 650px;
+      height: 400px;
+      border: 20px solid var(--black);
+      border-radius: 40px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 1280px) {
+        display: block;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 1024px), (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .todos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+    border-bottom: 1px solid var(--gray);
+
+    .todosTitle {
+      font-weight: 500;
+      font-size: 30px;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .main {
+      max-width: 1000px;
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+
+    .image {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .main {
+      max-width: 750px;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      max-width: 460px;
+      padding: 20px;
+    }
+
+    .todos {
+      padding: 20px;
+    }
+
+    .image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .main {
+      padding: 10px;
+    }
+
+    .text {
+      gap: 15px;
+    }
+
+    .image {
+      display: none;
+    }
+
+    .todos {
+      padding: 20px 0;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .main {
+      padding: 5px;
+    }
+
+    .text {
+      gap: 10px;
+    }
+
+    .todos {
+      padding: 10px 0;
+    }
+  }
+}

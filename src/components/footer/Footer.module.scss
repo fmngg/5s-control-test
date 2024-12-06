@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex: 0;
+  background-color: var(--black);
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+
+  a {
+    color: var(--orange);
+
+    &:focus {
+      color: var(--orange);
+    }
+
+    &:visited {
+      color: var(--orange);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.tableItem {
+  border-bottom: 1px solid var(--gray);
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 3fr);
+  align-items: center;
+  gap: 10px;
+  min-width: 768px;
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1200px) {
+    p,
+    button {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    p,
+    button {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p,
+    button {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    p,
+    button {
+      font-size: 12px;
+    }
+  }
+}

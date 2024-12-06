@@ -1,0 +1,42 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+  z-index: 3;
+
+  .modal {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--black) !important;
+    border-radius: 40px 0px 40px 40px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(150px);
+
+    .cancel {
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      z-index: 1;
+      border-radius: 0px 10px 0px 10px;
+      color: var(--orange);
+    }
+  }
+}
+
+.visible {
+  visibility: visible;
+  background-color: rgba($color: rgb(100, 100, 100), $alpha: 0.5);
+
+  .modal {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

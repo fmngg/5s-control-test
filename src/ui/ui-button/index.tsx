@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC, PropsWithRef, ReactNode } from "react";
-import styles from "./UiButton.module.scss";
+import styles from "./UIButton.module.scss";
 
 interface ButtonProps {
   className?: string;
